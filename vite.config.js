@@ -5,6 +5,10 @@ export default {
     input: 'src/main.js',
     format: 'system',
     preserveEntrySignatures: true,
+    output: {
+      file: 'dist/bundle.js',
+      format: 'iife',
+    },
   },
   base: '/mf-backoffice-login/',
   plugins: [
