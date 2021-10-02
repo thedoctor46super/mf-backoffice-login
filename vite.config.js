@@ -6,7 +6,7 @@ export default {
     format: 'system',
     preserveEntrySignatures: true,
   },
-  //base: 'http://localhost:3000',
+  base: '/mf-backoffice-login/',
   plugins: [
     vue({
       template: {
