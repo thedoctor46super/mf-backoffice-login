@@ -1,14 +1,14 @@
-import { createRouter, createWebHistory } from 'vue-router';
+//import { createRouter, createWebHistory } from 'vue-router';
 import Login from '/src/components/Login.vue';
 const routes = [
   {
-    path: '/login',
+    path: '/mf-backoffice-root/login',
     name: 'Login',
     component: Login,
   },
 ];
-const router = createRouter({
-  history: createWebHistory(),
+const router = VueRouter.createRouter({
+  history: VueRouter.createWebHistory(),
   routes,
 });
 export default router;

@@ -2,7 +2,7 @@
   <div class="login flex center">
     <transition>
       <div v-if="loginError" class="login-error flex center">
-        <img src="../assets/img/warning.svg" alt="" />
+        <img src="../mf-backoffice-root/assets/img/warning.svg" alt="" />
         &nbsp;
         <span>Login failed. Please try again.</span>
       </div>
@@ -23,7 +23,11 @@
               <div class="ball" />
             </div>
             <div v-else class="flex center">
-              <img src="../assets/img/google.svg" class="g-logo" alt="" />
+              <img
+                src="../mf-backoffice-root/assets/img/google.svg"
+                class="g-logo"
+                alt=""
+              />
               <span>Sign In</span>
             </div>
           </button>
@@ -35,7 +39,7 @@
             <vue-recaptcha
               v-if="!showGoogleLogin"
               ref="vueRecaptcha"
-              site-key="6Lf29EQUAAAAALFiD7lhOASZ5cM3mb8mbGpKYKss"
+              site-key="6LcmBNsUAAAAAD331JOX2m45abJOkUPlDpccoQJD"
               size="invisible"
               @verify="recaptchaVerified"
               @expire="recaptchaExpired"
@@ -157,7 +161,7 @@ export default {
     async loginSuccess(data) {
       setUser(data);
 
-      this.$router.push({ path: '/' });
+      this.$router.push({ path: '/mf-backoffice-root/' });
     },
     async onSubmit() {
       if (!this.username.trim() || !this.password.trim()) {

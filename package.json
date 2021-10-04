@@ -25,6 +25,7 @@
     "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-vue": "^7.18.0",
-    "prettier": "^2.4.1"
+    "prettier": "^2.4.1",
+    "rollup-plugin-external-globals": "^0.6.1"
   }
 }
